@@ -1,9 +1,170 @@
 html {
   height: 100%;
+
 }
+
 
 body {
   margin: 0;
   min-height: 100%;
   font: 16px / 1 sans-serif;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/*top*/
+
+.top-section {
+  background: url(images/space.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex-grow: 2;
+}
+
+.profile-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:8em;
+}
+
+.profile-photo {
+  margin:2em;
+  width:300px;
+  height:300px;
+}
+
+.me-text {
+	background: #c0c0c0;
+  border-radius: .4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.me-text > h1 {
+  font-weight:bold;
+  font-size: 18pt;
+  margin: .75em 1em 0em .75em;
+}
+
+.me-text > p {
+  margin: .5em 1em 1em 1em;
+
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 20px solid #c0c0c0;
+  border-right: 20px solid transparent;
+  margin-left: 10%;
+}
+
+/*portfolio*/
+
+.top-part-b {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.app-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+.app-image {
+  margin: 1.5em; 
+  flex-grow: 1;
+}
+
+
+/*blog*/
+
+.mid-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #031019;
+}
+
+.blog {
+  border-radius: 5px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  margin: 1em 1em 4em 1em;
+  background-color: white;
+}
+
+.blog-image {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  max-width: 100%;
+  object-fit: cover;}
+
+.blog-post {
+  padding:1.5em;
+  max-width: 95%;
+}
+
+.blog-title {
+ font-weight:bold;
+}
+
+.blog-date {
+  font-size: 50%;
+}
+
+.button-position {
+ display:flex;
+ justify-content: flex-end;
+ margin: -5em 3em 1em 0em;
+}
+
+.reading-button {
+  border-radius: 5px;
+  background-color: rgb(30, 144, 255);
+  color:white;
+  padding: .75em;
+  display: flex;
+  justify-content:center;
+}
+
+/*footer*/
+
+.footer > h2 {
+  color: white;
+  font-size: 150%;
+}
+
+.footer > p {
+  color: white;
+  font-size: 75%;
+  font-weight: lighter;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3em 1.5em;
+  background-color: #031019;
+}
+
+.footer-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:50px;
+}
+
+.twit-icon {
+  margin: .5em;
+  width: 100%;
+  height: 100%;
 }
