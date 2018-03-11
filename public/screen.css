@@ -1,6 +1,7 @@
 html {
   height: 100%;
-
+  background-color: #031019;
+  
 }
 
 
@@ -11,6 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 
 /*top*/
@@ -19,34 +21,34 @@ body {
   background: url(images/space.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-container {
   display:flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin:8em;
+  flex-grow: 2;
+  margin:4em;
 }
 
 .profile-photo {
-  margin:2em;
-  width:300px;
-  height:300px;
+  max-width: 90%;
+  border-radius: 8px;
 }
 
 .me-text {
-	background: #c0c0c0;
-  border-radius: .4em;
+  background: #D0D4D5;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .me-text > h1 {
-  font-weight:bold;
-  font-size: 18pt;
-  margin: .75em 1em 0em .75em;
+  font-weight: bold;
+  font-size: 110%;
+  margin: .5em 1em 0em .5em;
 }
 
 .me-text > p {
@@ -62,7 +64,7 @@ body {
   margin-left: 10%;
 }
 
-/*portfolio*/
+/* topb */
 
 .top-part-b {
   background-color: rgba(0, 0, 0, 0.5);
@@ -74,21 +76,27 @@ body {
   justify-content: space-around;
   flex-wrap: nowrap;
   flex-grow: 1;
+  padding: .5em;
+}
+
+.app-img-container{
+  display: flex;
+  flex-grow: 1;
+  padding: .5em;
 }
 
 .app-image {
-  margin: 1.5em; 
-  flex-grow: 1;
+  max-width: 100%;
+  max-height: 100%
 }
 
 
-/*blog*/
+/* mid */
 
 .mid-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #031019;
 }
 
 .blog {
@@ -116,7 +124,7 @@ body {
 }
 
 .blog-date {
-  font-size: 50%;
+  font-size: 60%;
 }
 
 .button-position {
@@ -127,7 +135,7 @@ body {
 
 .reading-button {
   border-radius: 5px;
-  background-color: rgb(30, 144, 255);
+  background-color: #1389D7;
   color:white;
   padding: .75em;
   display: flex;
@@ -153,7 +161,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 3em 1.5em;
-  background-color: #031019;
 }
 
 .footer-container {
