@@ -33,6 +33,7 @@ body {
 }
 
 .profile-photo {
+  margin: 2em;
   max-width: 90%;
   border-radius: 8px;
 }
